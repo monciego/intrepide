@@ -32,4 +32,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family: inherit;
     }
     
+    section {
+        margin: 3rem 0;
+    }
 `;
