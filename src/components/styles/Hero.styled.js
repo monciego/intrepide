@@ -15,7 +15,7 @@ export const MainHero = styled.main`
 
 export const MainDetails = styled.div`
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 `;
 
@@ -78,6 +78,7 @@ export const MainDescription = styled.p`
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     font-size: 1rem;
+    width: 90%;
   }
 `;
 
@@ -103,6 +104,7 @@ export const MainImage = styled.figure`
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     background: transparent;
+    height: 28rem;
   }
 `;
 
@@ -115,6 +117,6 @@ export const HeroImage = styled.img`
   transform: translateX(-50%);
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    height: 27rem;
+    height: 100%;
   }
 `;
