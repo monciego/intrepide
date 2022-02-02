@@ -6,6 +6,7 @@ export const theme = {
   colors: {
     primary: "#FF0034",
     secondary: "#0736DB",
+    tertiary: "#C2C2C2",
   },
   breakpoints: {
     lg: "64rem",
