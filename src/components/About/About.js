@@ -1,19 +1,19 @@
 import React from "react";
-import { AboutCards, AboutSection } from "../styles/About.styled";
 import { SectionTitle } from "../styles/SectionHeaders.styled";
 import { aboutData } from "../../aboutData";
 import AboutCard from "./AboutCard";
+import { Section, SectionCards } from "../styles/Sections.styled";
 
 const About = () => {
   return (
-    <AboutSection id="about">
+    <Section id="about">
       <SectionTitle>The leading fitness experts</SectionTitle>
-      <AboutCards>
+      <SectionCards>
         {aboutData.map((about) => (
           <AboutCard key={about.id} {...about} />
         ))}
-      </AboutCards>
-    </AboutSection>
+      </SectionCards>
+    </Section>
   );
 };
 

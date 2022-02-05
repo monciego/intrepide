@@ -1,30 +1,29 @@
 import React from "react";
 import { StyledButton } from "../styles/Button.styled";
-import {
-  ProgramCardDetails,
-  ProgramDetails,
-  ProgramImage,
-  ProgramImg,
-  ProgramTitle,
-  StyledProgramCard,
-} from "../styles/Program.styled";
 import { BsFillPlayCircleFill as PlayIcon } from "react-icons/bs";
+import {
+  CardDetails,
+  CardImage,
+  CardImg,
+  SectionCardDetails,
+  SectionCardTitle,
+  StyledCard,
+} from "../styles/Card.styled";
 
 const ProgramCard = ({ img, title, details, imgStart, line }) => {
-  console.log(imgStart);
   return (
-    <StyledProgramCard imgStart={imgStart}>
-      <ProgramImage imgStart={imgStart} line={line}>
-        <ProgramImg src={img} alt={title} />
-      </ProgramImage>
-      <ProgramCardDetails>
-        <ProgramTitle>{title}</ProgramTitle>
-        <ProgramDetails>{details}</ProgramDetails>
+    <StyledCard imgStart={imgStart}>
+      <CardImage imgStart={imgStart} line={line}>
+        <CardImg src={img} alt={title} />
+      </CardImage>
+      <CardDetails>
+        <SectionCardTitle>{title}</SectionCardTitle>
+        <SectionCardDetails>{details}</SectionCardDetails>
         <StyledButton>
           Learn More <PlayIcon />
         </StyledButton>
-      </ProgramCardDetails>
-    </StyledProgramCard>
+      </CardDetails>
+    </StyledCard>
   );
 };
 

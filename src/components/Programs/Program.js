@@ -1,15 +1,15 @@
 import React from "react";
-import { ProgramCards, ProgramSection } from "../styles/Program.styled";
 import {
   SectionDescription,
   SectionTitle,
 } from "../styles/SectionHeaders.styled";
 import { programData } from "../../programData";
 import ProgramCard from "./ProgramCard";
+import { Section, SectionCards } from "../styles/Sections.styled";
 
 const Program = () => {
   return (
-    <ProgramSection id="programs">
+    <Section id="programs">
       <SectionTitle>our training programs</SectionTitle>
       <SectionDescription>
         {" "}
@@ -17,12 +17,12 @@ const Program = () => {
         shape centered alterations that will push you as far as possible without
         bargaining your security.
       </SectionDescription>
-      <ProgramCards>
+      <SectionCards>
         {programData.map((program) => (
           <ProgramCard key={program.id} {...program} />
         ))}
-      </ProgramCards>
-    </ProgramSection>
+      </SectionCards>
+    </Section>
   );
 };
 
