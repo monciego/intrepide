@@ -24,6 +24,7 @@ export const ProgramImage = styled.figure`
   width: 100%;
   height: 16rem;
   position: relative;
+  margin-bottom: 0.85rem;
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     width: 45%;
@@ -37,6 +38,7 @@ export const ProgramImage = styled.figure`
       background: #fff;
       width: 5rem;
       left: ${(props) => (props.imgStart ? "90%" : "-3rem")};
+      display: ${(props) => (props.line ? "block" : "none")};
     }
   }
 `;
@@ -56,7 +58,6 @@ export const ProgramCardDetails = styled.div`
 export const ProgramTitle = styled.h3`
   font-size: 1.15rem;
   font-weight: 600;
-  margin-top: 0.85rem;
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     font-size: 1.5rem;

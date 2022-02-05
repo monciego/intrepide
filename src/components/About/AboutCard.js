@@ -1,5 +1,4 @@
 import React from "react";
-import { StyledButton } from "../styles/Button.styled";
 import {
   ProgramCardDetails,
   ProgramDetails,
@@ -8,24 +7,25 @@ import {
   ProgramTitle,
   StyledProgramCard,
 } from "../styles/Program.styled";
-import { BsFillPlayCircleFill as PlayIcon } from "react-icons/bs";
+import { SectionLink, SubTitle } from "../styles/About.styled";
+import { HiOutlineArrowNarrowRight as Arrow } from "react-icons/hi";
 
-const ProgramCard = ({ img, title, details, imgStart, line }) => {
-  console.log(imgStart);
+export const AboutCard = ({ img, title, subTitle, details, imgStart }) => {
   return (
     <StyledProgramCard imgStart={imgStart}>
-      <ProgramImage imgStart={imgStart} line={line}>
+      <ProgramImage imgStart={imgStart}>
         <ProgramImg src={img} alt={title} />
       </ProgramImage>
       <ProgramCardDetails>
+        <SubTitle>{subTitle}</SubTitle>
         <ProgramTitle>{title}</ProgramTitle>
         <ProgramDetails>{details}</ProgramDetails>
-        <StyledButton>
-          Learn More <PlayIcon />
-        </StyledButton>
+        <SectionLink>
+          Learn More <Arrow />
+        </SectionLink>
       </ProgramCardDetails>
     </StyledProgramCard>
   );
 };
 
-export default ProgramCard;
+export default AboutCard;
