@@ -4,6 +4,7 @@ import { GlobalStyles } from "./components/styles/Global";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./components/styles/Theme";
 import Hero from "./components/Hero/Hero";
+import Program from "./components/Programs/Program";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <div className="container">
           <Navbar />
           <Hero />
+          <Program />
         </div>
       </ThemeProvider>
     </>
