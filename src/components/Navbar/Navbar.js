@@ -16,19 +16,59 @@ const Navbar = () => {
       <Menu />
       <NavLists>
         <NavList>
-          <NavLink to="/">Home</NavLink>
+          <NavLink
+            to="/"
+            smooth={true}
+            duration={650}
+            delay={0}
+            spyThrottle={0}
+          >
+            Home
+          </NavLink>
         </NavList>
         <NavList>
-          <NavLink to="programs">Programs</NavLink>
+          <NavLink
+            to="programs"
+            smooth={true}
+            duration={650}
+            delay={0}
+            spyThrottle={0}
+          >
+            Programs
+          </NavLink>
         </NavList>
         <NavList>
-          <NavLink to="about">About Us</NavLink>
+          <NavLink
+            to="about"
+            smooth={true}
+            duration={650}
+            delay={0}
+            spyThrottle={0}
+          >
+            About Us
+          </NavLink>
         </NavList>
         <NavList>
-          <NavLink to="memberships">Memberships</NavLink>
+          <NavLink
+            to="memberships"
+            smooth={true}
+            duration={650}
+            delay={0}
+            spyThrottle={0}
+          >
+            Memberships
+          </NavLink>
         </NavList>
         <NavList>
-          <NavLink to="testimonials">Testimonials</NavLink>
+          <NavLink
+            to="testimonials"
+            smooth={true}
+            duration={650}
+            delay={0}
+            spyThrottle={0}
+          >
+            Testimonials
+          </NavLink>
         </NavList>
         <StyledButton primary={true}>Become a member</StyledButton>
       </NavLists>
