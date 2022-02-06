@@ -8,6 +8,7 @@ import Program from "./components/Programs/Program";
 import About from "./components/About/About";
 import Benefits from "./components/Benefits/Benefits";
 import Banner from "./components/Banner/Banner";
+import Membership from "./components/Membership/Membership";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <About />
           <Benefits />
           <Banner />
+          <Membership />
         </div>
       </ThemeProvider>
     </>
