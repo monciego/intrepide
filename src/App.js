@@ -7,6 +7,7 @@ import Hero from "./components/Hero/Hero";
 import Program from "./components/Programs/Program";
 import About from "./components/About/About";
 import Benefits from "./components/Benefits/Benefits";
+import Banner from "./components/Banner/Banner";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Program />
           <About />
           <Benefits />
+          <Banner />
         </div>
       </ThemeProvider>
     </>
