@@ -4,7 +4,7 @@ export const BannerContainer = styled.div`
   background: linear-gradient(178.84deg, #181818 0.99%, #111111 81.21%);
   padding: 1rem;
   margin-top: -3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     display: flex;
