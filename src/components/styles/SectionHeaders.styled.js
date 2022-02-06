@@ -8,6 +8,7 @@ export const SectionTitle = styled.h2`
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     font-size: 2.25rem;
+    text-align: ${(props) => (props.textDefault ? "left" : "center")};
   }
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
@@ -25,12 +26,14 @@ export const SectionDescription = styled.p`
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     width: 100%;
-    max-width: 70%;
     font-size: 1rem;
+    text-align: ${(props) => (props.textDefault ? "left" : "center")};
+    margin: ${(props) => (props.textDefault ? "0.95rem 0" : "0.95rem auto")};
+    max-width: ${(props) => (props.textDefault ? "100%" : "70%")};
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     width: 100%;
-    max-width: 65%;
+    max-width: ${(props) => (props.textDefault ? "100%" : "65%")};
   }
 `;
