@@ -33,7 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     section {
-        margin: 3rem 0;
+        margin: 1.5rem 0;
         padding: 1.5rem 0;
     }
 `;
