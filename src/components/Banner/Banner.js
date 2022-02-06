@@ -18,7 +18,7 @@ const Banner = () => {
           healthy and ideal body. Free to choose according to your goals!
         </BannerDetails>
         <StyledButton primary={true}>
-          join now <ArrowIcon />
+          Join Now <ArrowIcon />
         </StyledButton>
       </BannerCTA>
     </BannerContainer>
