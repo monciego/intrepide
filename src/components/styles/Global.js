@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family: ${({ theme }) => theme.fonts.montserrat};
         background: #111111;
         color: #fff;   
+        overflow-x: hidden;
     }
 
     .container {
