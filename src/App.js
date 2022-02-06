@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Program from "./components/Programs/Program";
 import About from "./components/About/About";
+import Benefits from "./components/Benefits/Benefits";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Hero />
           <Program />
           <About />
+          <Benefits />
         </div>
       </ThemeProvider>
     </>
