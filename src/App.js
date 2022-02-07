@@ -9,6 +9,7 @@ import About from "./components/About/About";
 import Benefits from "./components/Benefits/Benefits";
 import Banner from "./components/Banner/Banner";
 import Membership from "./components/Membership/Membership";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Benefits />
           <Banner />
           <Membership />
+          <Testimonials />
         </div>
       </ThemeProvider>
     </>
