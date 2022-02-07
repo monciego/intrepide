@@ -33,7 +33,8 @@ export const GlobalStyles = createGlobalStyle`
         font-family: inherit;
     }
     
-    section {
+    section,
+    footer {
         margin: 1.5rem 0;
         padding: 1.5rem 0;
     }
