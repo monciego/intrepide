@@ -13,13 +13,23 @@ import {
   PopularPricing,
 } from "../styles/MembershipCard.styled";
 
-const MembershipCard = ({ tier, price, membershipIncludes, primier }) => {
+const MembershipCard = ({
+  tier,
+  price,
+  membershipIncludes,
+  primier,
+  anuallyPrice,
+  annualyFunction,
+}) => {
   return (
     <MembershipStyledCard>
       {primier && <PopularPricing>popular pricing</PopularPricing>}
       <MembershipTier>{tier}</MembershipTier>
       <MembershipPrice>
-        ${price} <MembershipCardPer>/ mo</MembershipCardPer>
+        ${annualyFunction ? anuallyPrice : price}
+        <MembershipCardPer>
+          / {annualyFunction ? " year" : " mo"}
+        </MembershipCardPer>
       </MembershipPrice>
       <MembershipIncludesTitle>What's included</MembershipIncludesTitle>
       <MembershipListContainer>

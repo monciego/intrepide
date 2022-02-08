@@ -16,6 +16,12 @@ import MembershipCard from "./MembershipCard";
 import { membershipCarDatas } from "../../membershipCardData";
 
 const Membership = () => {
+  const [annualy, setAnually] = React.useState(false);
+
+  const annualyFunction = () => {
+    setAnually((prev) => !prev);
+  };
+
   return (
     <Section id="memberships">
       <SectionTitle>MEMBERSHIP PLANS</SectionTitle>
@@ -26,12 +32,22 @@ const Membership = () => {
       <MembershipChoose>
         <MembershipChooseText>BILL MONTHLY</MembershipChooseText>
         <ToggleInput id="switch" type="checkbox" />
-        <ToggleLabel htmlFor="switch" title="Toggle" />
+        <ToggleLabel
+          htmlFor="switch"
+          title="Toggle"
+          onClick={annualyFunction}
+        />
         <MembershipChooseText>BILL ANUALLY</MembershipChooseText>
       </MembershipChoose>
       <MembershipCards>
         {membershipCarDatas.map((membershipCard) => {
-          return <MembershipCard key={membershipCard.id} {...membershipCard} />;
+          return (
+            <MembershipCard
+              key={membershipCard.id}
+              {...membershipCard}
+              annualyFunction={annualy}
+            />
+          );
         })}
       </MembershipCards>
     </Section>

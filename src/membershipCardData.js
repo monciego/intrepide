@@ -3,6 +3,7 @@ export const membershipCarDatas = [
     id: 1,
     tier: "BASIC",
     price: 50,
+    anuallyPrice: 550,
     membershipIncludes: [
       {
         id: 1,
@@ -49,6 +50,7 @@ export const membershipCarDatas = [
     id: 2,
     tier: "PREMIER",
     price: 90,
+    anuallyPrice: "1,150",
     membershipIncludes: [
       {
         id: 1,
@@ -95,6 +97,7 @@ export const membershipCarDatas = [
     id: 3,
     tier: "ELITE",
     price: 65,
+    anuallyPrice: 750,
     membershipIncludes: [
       {
         id: 1,
