@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         font-family: ${({ theme }) => theme.fonts.montserrat};
-        background: #111111;
+        background: ${({ theme }) => theme.colors.primaryBG};
         color: #fff;   
         overflow-x: hidden;
     }

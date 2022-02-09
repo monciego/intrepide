@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 export const MobileStyledNav = styled.nav`
   display: ${({ isOpen }) => (isOpen ? "block" : "none")};
-  background: #111111;
+  background: ${({ theme }) => theme.colors.primaryBG};
   position: fixed;
   inset: 0;
   z-index: 900;

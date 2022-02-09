@@ -7,6 +7,7 @@ export const theme = {
     primary: "#FF0034",
     secondary: "#0736DB",
     tertiary: "#C2C2C2",
+    primaryBG: "#111111",
     secondaryBG: "#181818",
   },
   breakpoints: {
