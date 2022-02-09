@@ -12,7 +12,7 @@ export const StyledButton = styled.button`
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 
   &:hover {
     background: ${(props) => (props.primary ? "#CD0031" : "#022398")};
@@ -20,5 +20,10 @@ export const StyledButton = styled.button`
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
     font-size: 0.95rem;
+  }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+    font-size: 0.8rem;
+    padding: 0.5rem 1.25rem;
   }
 `;
