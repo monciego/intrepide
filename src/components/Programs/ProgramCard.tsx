@@ -1,6 +1,5 @@
-import React from "react";
-import { StyledButton } from "../styles/Button.styled";
-import { BsFillPlayCircleFill as PlayIcon } from "react-icons/bs";
+import { StyledButton } from '@/components/styles/Button.styled';
+import { BsFillPlayCircleFill as PlayIcon } from 'react-icons/bs';
 import {
   CardDetails,
   CardImage,
@@ -8,7 +7,7 @@ import {
   SectionCardDetails,
   SectionCardTitle,
   StyledCard,
-} from "../styles/Card.styled";
+} from '@/components/styles/Card.styled';
 
 const ProgramCard = ({ img, title, details, imgStart, line }) => {
   return (

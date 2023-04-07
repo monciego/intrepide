@@ -1,5 +1,4 @@
-import React from "react";
-import { StyledButton } from "../styles/Button.styled";
+import { StyledButton } from '@/components/styles/Button.styled';
 import {
   CloseMenu,
   MobileBottomText,
@@ -11,8 +10,8 @@ import {
   MobileMenuImage,
   MobileNavList,
   MobileStyledNav,
-} from "../styles/MobileNav.styled";
-import Image from "../../assets/program1-img.png";
+} from '@/components/styles/MobileNav.styled';
+import Image from '@/assets/program1-img.png';
 
 const MobileNav = ({ isOpen, toggleHandler }) => {
   return (
@@ -24,7 +23,7 @@ const MobileNav = ({ isOpen, toggleHandler }) => {
       <MobileNavList>
         <MobileList>
           <MobileLink
-            to="/"
+            to='/'
             smooth={true}
             duration={650}
             delay={0}
@@ -36,7 +35,7 @@ const MobileNav = ({ isOpen, toggleHandler }) => {
         </MobileList>
         <MobileList>
           <MobileLink
-            to="programs"
+            to='programs'
             smooth={true}
             duration={650}
             delay={0}
@@ -48,7 +47,7 @@ const MobileNav = ({ isOpen, toggleHandler }) => {
         </MobileList>
         <MobileList>
           <MobileLink
-            to="about"
+            to='about'
             smooth={true}
             duration={650}
             delay={0}
@@ -60,7 +59,7 @@ const MobileNav = ({ isOpen, toggleHandler }) => {
         </MobileList>
         <MobileList>
           <MobileLink
-            to="memberships"
+            to='memberships'
             smooth={true}
             duration={650}
             delay={0}
@@ -72,7 +71,7 @@ const MobileNav = ({ isOpen, toggleHandler }) => {
         </MobileList>
         <MobileList>
           <MobileLink
-            to="testimonials"
+            to='testimonials'
             smooth={true}
             duration={650}
             delay={0}
@@ -85,7 +84,7 @@ const MobileNav = ({ isOpen, toggleHandler }) => {
       </MobileNavList>
       <StyledButton
         onClick={toggleHandler}
-        style={{ width: "100%", marginTop: "1rem" }}
+        style={{ width: '100%', marginTop: '1rem' }}
         primary={true}
       >
         Become a member

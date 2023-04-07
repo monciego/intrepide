@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 import {
   SectionDescription,
   SectionTitle,
-} from "../styles/SectionHeaders.styled";
-import { Section } from "../styles/Sections.styled";
+} from '@/components/styles/SectionHeaders.styled';
+import { Section } from '@/components/styles/Sections.styled';
 import {
   ArrowNext,
   ArrowPrev,
@@ -25,19 +25,25 @@ import {
   AttestantName,
   AttestantInformation,
   AttestantSubName,
-} from "../styles/Testimonials.styed";
-import { avatar1, avatar2, avatar3, avatar4, avatar5 } from "./avatars";
-import { IconContext } from "react-icons";
-import attestantAvatar from "../../assets/attestant-avatar1.jpg";
+} from '@/components/styles/Testimonials.styed';
+import {
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4,
+  avatar5,
+} from '@/components/Testimonials/avatars';
+import { IconContext } from 'react-icons';
+import attestantAvatar from '@/assets/attestant-avatar1.jpg';
 
 const Testimonials = () => {
   const iconStyle = {
-    color: "#fff",
-    size: "1.25rem",
+    color: '#fff',
+    size: '1.25rem',
   };
 
   return (
-    <Section id="testimonials">
+    <Section id='testimonials'>
       <TestimonialSection>
         <TestimonialDetails>
           <SectionTitle textDefault={true}>testimonials</SectionTitle>
@@ -74,7 +80,7 @@ const Testimonials = () => {
             </TestimonialText>
             <AttestantDetails>
               <AttestantAvatarImage>
-                <AttestantAvatar src={attestantAvatar} alt="attestant" />
+                <AttestantAvatar src={attestantAvatar} alt='attestant' />
               </AttestantAvatarImage>
               <AttestantInformation>
                 <AttestantName>Janice Thompson</AttestantName>

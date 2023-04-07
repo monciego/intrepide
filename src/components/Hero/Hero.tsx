@@ -1,4 +1,3 @@
-import React from "react";
 import {
   HeroImage,
   MainButtons,
@@ -9,13 +8,13 @@ import {
   MainTitleLine,
   MainTitleTextGradient,
   MainTitlte,
-} from "../styles/Hero.styled";
-import { StyledButton } from "../styles/Button.styled";
+} from '@/components/styles/Hero.styled';
+import { StyledButton } from '@/components/styles/Button.styled';
 import {
   BsArrowUpRightCircleFill as ArrowIcon,
   BsFillPlayCircleFill as PlayIcon,
-} from "react-icons/bs";
-import heroImg from "../../assets/hero-image.png";
+} from 'react-icons/bs';
+import heroImg from '@/assets/hero-image.png';
 
 const Hero = () => {
   return (
@@ -35,13 +34,13 @@ const Hero = () => {
             Get Started <ArrowIcon />
           </StyledButton>
           <StyledButton>
-            Learn More <PlayIcon />{" "}
+            Learn More <PlayIcon />{' '}
           </StyledButton>
         </MainButtons>
       </MainDetails>
 
       <MainImage>
-        <HeroImage src={heroImg} alt="main image" />
+        <HeroImage src={heroImg} alt='main image' />
       </MainImage>
     </MainHero>
   );

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   MembershipPrice,
   MembershipStyledCard,
@@ -11,7 +10,7 @@ import {
   MembershipCardCTA,
   MembershipListContainer,
   PopularPricing,
-} from "../styles/MembershipCard.styled";
+} from '@/components/styles/MembershipCard.styled';
 
 const MembershipCard = ({
   tier,
@@ -28,7 +27,7 @@ const MembershipCard = ({
       <MembershipPrice>
         ${annualyFunction ? anuallyPrice : price}
         <MembershipCardPer>
-          / {annualyFunction ? " year" : " mo"}
+          / {annualyFunction ? ' year' : ' mo'}
         </MembershipCardPer>
       </MembershipPrice>
       <MembershipIncludesTitle>What's included</MembershipIncludesTitle>

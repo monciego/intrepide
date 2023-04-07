@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Benefit,
   BenefitsImage,
@@ -9,14 +8,14 @@ import {
   SectionBenefits,
   BenefitsDetails,
   BenefitsImageContainer,
-} from "../styles/Benefits.styled";
+} from '@/components/styles/Benefits.styled';
 import {
   SectionDescription,
   SectionTitle,
-} from "../styles/SectionHeaders.styled";
-import { Section } from "../styles/Sections.styled";
-import { benefitsData } from "../../benefitsData";
-import BenefitImg from "../../assets/benefits-img.png";
+} from '@/components/styles/SectionHeaders.styled';
+import { Section } from '@/components/styles/Sections.styled';
+import { benefitsData } from '@//benefitsData';
+import BenefitImg from '@/assets/benefits-img.png';
 
 const Benefits = () => {
   return (
@@ -42,7 +41,7 @@ const Benefits = () => {
         </BenefitsDetails>
         <BenefitsImageContainer>
           <BenefitsImage>
-            <BenefitsImg src={BenefitImg} alt="benefit image" />
+            <BenefitsImg src={BenefitImg} alt='benefit image' />
           </BenefitsImage>
         </BenefitsImageContainer>
       </SectionBenefits>

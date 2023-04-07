@@ -1,12 +1,11 @@
-import React from "react";
-import { SectionTitle } from "../styles/SectionHeaders.styled";
-import { aboutData } from "../../aboutData";
-import AboutCard from "./AboutCard";
-import { Section, SectionCards } from "../styles/Sections.styled";
+import { SectionTitle } from '@/components/styles/SectionHeaders.styled';
+import { aboutData } from '@/aboutData';
+import AboutCard from '@/components/About/AboutCard';
+import { Section, SectionCards } from '@/components/styles/Sections.styled';
 
 const About = () => {
   return (
-    <Section id="about">
+    <Section id='about'>
       <SectionTitle>The leading fitness experts</SectionTitle>
       <SectionCards>
         {aboutData.map((about) => (
