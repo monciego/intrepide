@@ -1,22 +1,21 @@
-import React from 'react';
-
-import { Section } from '../styles/Sections.styled';
+import { useState } from 'react';
+import { Section } from '@/components/styles/Sections.styled';
 import {
   MembershipCards,
   MembershipChoose,
   MembershipChooseText,
   ToggleInput,
   ToggleLabel,
-} from '../styles/Membership.styled';
+} from '@/components/styles/Membership.styled';
 import {
   SectionDescription,
   SectionTitle,
-} from '../styles/SectionHeaders.styled';
-import MembershipCard from './MembershipCard';
-import { membershipCarDatas } from '../../membershipCardData';
+} from '@/components/styles/SectionHeaders.styled';
+import MembershipCard from '@/components/Membership/MembershipCard';
+import { membershipCarDatas } from '@/membershipCardData';
 
 const Membership = () => {
-  const [annualy, setAnually] = React.useState(false);
+  const [annualy, setAnually] = useState(false);
 
   const annualyFunction = () => {
     setAnually((prev) => !prev);

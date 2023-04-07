@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   CardDetails,
   CardImage,
@@ -8,8 +8,8 @@ import {
   SectionLink,
   StyledCard,
   SubTitle,
-} from "../styles/Card.styled";
-import { HiOutlineArrowNarrowRight as Arrow } from "react-icons/hi";
+} from '@/components/styles/Card.styled';
+import { HiOutlineArrowNarrowRight as Arrow } from 'react-icons/hi';
 
 export const AboutCard = ({ img, title, subTitle, details, imgStart }) => {
   return (

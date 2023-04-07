@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FooterDescription,
   FooterLogo,
@@ -13,8 +12,8 @@ import {
   Copyright,
   LegalLinks,
   LegalLink,
-} from "../styles/Footer.styled";
-import { Section } from "../styles/Sections.styled";
+} from '@/components/styles/Footer.styled';
+import { Section } from '@/components/styles/Sections.styled';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -35,18 +34,18 @@ const Footer = () => {
             <FooterSectionsTitle>Company</FooterSectionsTitle>
             <FooterList>
               <FooterLink
-                target="__blank"
-                rel="noopener noreferrer"
-                href="https://jerichobantiquete.netlify.app/"
+                target='__blank'
+                rel='noopener noreferrer'
+                href='https://jerichobantiquete.netlify.app/'
               >
                 About us
               </FooterLink>
             </FooterList>
             <FooterList>
-              <FooterLink href="#0">Career</FooterLink>
+              <FooterLink href='#0'>Career</FooterLink>
             </FooterList>
             <FooterList>
-              <FooterLink href="mailto:jerichobantiquete@gmail.com">
+              <FooterLink href='mailto:jerichobantiquete@gmail.com'>
                 Contact us
               </FooterLink>
             </FooterList>
@@ -54,25 +53,25 @@ const Footer = () => {
           <FooterSectionLink>
             <FooterSectionsTitle>Membership</FooterSectionsTitle>
             <FooterList>
-              <FooterLink href="#0">Education</FooterLink>
+              <FooterLink href='#0'>Education</FooterLink>
             </FooterList>
             <FooterList>
-              <FooterLink href="#0">Member Policies</FooterLink>
+              <FooterLink href='#0'>Member Policies</FooterLink>
             </FooterList>
             <FooterList>
-              <FooterLink href="#0">Personal Training</FooterLink>
+              <FooterLink href='#0'>Personal Training</FooterLink>
             </FooterList>
           </FooterSectionLink>
           <FooterSectionLink>
             <FooterSectionsTitle>Gym</FooterSectionsTitle>
             <FooterList>
-              <FooterLink href="#0">View all gyms</FooterLink>
+              <FooterLink href='#0'>View all gyms</FooterLink>
             </FooterList>
             <FooterList>
-              <FooterLink href="#0">Find a Gym</FooterLink>
+              <FooterLink href='#0'>Find a Gym</FooterLink>
             </FooterList>
             <FooterList>
-              <FooterLink href="#0">locations</FooterLink>
+              <FooterLink href='#0'>locations</FooterLink>
             </FooterList>
           </FooterSectionLink>
         </FooterSections>

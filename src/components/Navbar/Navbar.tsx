@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { StyledButton } from "../styles/Button.styled";
+import { useState } from 'react';
+import { StyledButton } from '@/components/styles/Button.styled';
 import {
   Logo,
   StyledNavbar,
@@ -7,8 +7,8 @@ import {
   NavLists,
   NavList,
   NavLink,
-} from "../styles/Navbar.styled";
-import MobileNav from "./MobileNavigation";
+} from '@/components/styles/Navbar.styled';
+import MobileNav from '@/components/Navbar/MobileNavigation';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
         <NavLists>
           <NavList>
             <NavLink
-              to="/"
+              to='/'
               smooth={true}
               duration={650}
               delay={0}
@@ -37,7 +37,7 @@ const Navbar = () => {
           </NavList>
           <NavList>
             <NavLink
-              to="programs"
+              to='programs'
               smooth={true}
               duration={650}
               delay={0}
@@ -48,7 +48,7 @@ const Navbar = () => {
           </NavList>
           <NavList>
             <NavLink
-              to="about"
+              to='about'
               smooth={true}
               duration={650}
               delay={0}
@@ -59,7 +59,7 @@ const Navbar = () => {
           </NavList>
           <NavList>
             <NavLink
-              to="memberships"
+              to='memberships'
               smooth={true}
               duration={650}
               delay={0}
@@ -70,7 +70,7 @@ const Navbar = () => {
           </NavList>
           <NavList>
             <NavLink
-              to="testimonials"
+              to='testimonials'
               smooth={true}
               duration={650}
               delay={0}

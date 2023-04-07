@@ -1,12 +1,11 @@
-import React from "react";
 import {
   BannerContainer,
   BannerCTA,
   BannerDetails,
   BannerTitle,
-} from "../styles/Banner.styled";
-import { StyledButton } from "../styles/Button.styled";
-import { BsArrowUpRightCircleFill as ArrowIcon } from "react-icons/bs";
+} from '@/components/styles/Banner.styled';
+import { StyledButton } from '@/components/styles/Button.styled';
+import { BsArrowUpRightCircleFill as ArrowIcon } from 'react-icons/bs';
 
 const Banner = () => {
   return (
