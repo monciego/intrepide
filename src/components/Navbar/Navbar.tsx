@@ -1,5 +1,7 @@
-import { useState } from 'react';
-import { StyledButton } from '@/components/styles/Button.styled';
+import { useState } from "react";
+import { auth, provider } from "../../config/firebase";
+import { signInWithPopup } from "firebase/auth";
+import { StyledButton } from "@/components/styles/Button.styled";
 import {
   Logo,
   StyledNavbar,
@@ -7,14 +9,21 @@ import {
   NavLists,
   NavList,
   NavLink,
-} from '@/components/styles/Navbar.styled';
-import MobileNav from '@/components/Navbar/MobileNavigation';
+} from "@/components/styles/Navbar.styled";
+import MobileNav from "@/components/Navbar/MobileNavigation";
+import { sign } from "crypto";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [signIn, setSignIn] = useState(false);
 
   const toggleHandler = () => {
     setIsOpen(!isOpen);
+  };
+
+  const signInHandler = async () => {
+    const res = await signInWithPopup(auth, provider);
+    setSignIn(true);
   };
 
   return (
@@ -26,7 +35,7 @@ const Navbar = () => {
         <NavLists>
           <NavList>
             <NavLink
-              to='/'
+              to="/"
               smooth={true}
               duration={650}
               delay={0}
@@ -37,7 +46,7 @@ const Navbar = () => {
           </NavList>
           <NavList>
             <NavLink
-              to='programs'
+              to="programs"
               smooth={true}
               duration={650}
               delay={0}
@@ -48,7 +57,7 @@ const Navbar = () => {
           </NavList>
           <NavList>
             <NavLink
-              to='about'
+              to="about"
               smooth={true}
               duration={650}
               delay={0}
@@ -59,7 +68,7 @@ const Navbar = () => {
           </NavList>
           <NavList>
             <NavLink
-              to='memberships'
+              to="memberships"
               smooth={true}
               duration={650}
               delay={0}
@@ -70,7 +79,7 @@ const Navbar = () => {
           </NavList>
           <NavList>
             <NavLink
-              to='testimonials'
+              to="testimonials"
               smooth={true}
               duration={650}
               delay={0}
@@ -79,7 +88,21 @@ const Navbar = () => {
               Testimonials
             </NavLink>
           </NavList>
-          <StyledButton primary={true}>Become a member</StyledButton>
+
+          <div
+            className="btn"
+            onClick={() => {
+              signInHandler();
+            }}
+          >
+            {signIn ? (
+              <StyledButton primary={true}>
+                Hey, {auth.currentUser?.displayName}
+              </StyledButton>
+            ) : (
+              <StyledButton primary={true}>Become a member</StyledButton>
+            )}
+          </div>
         </NavLists>
       </StyledNavbar>
     </>
