@@ -16,7 +16,7 @@ import {
 } from 'react-icons/bs';
 import heroImg from '@/assets/hero-image.png';
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
   return (
     <MainHero>
       <MainDetails>

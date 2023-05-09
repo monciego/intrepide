@@ -3,7 +3,7 @@ import { aboutData } from '@/aboutData';
 import AboutCard from '@/components/About/AboutCard';
 import { Section, SectionCards } from '@/components/styles/Sections.styled';
 
-const About = () => {
+const About = (): JSX.Element => {
   return (
     <Section id='about'>
       <SectionTitle>The leading fitness experts</SectionTitle>

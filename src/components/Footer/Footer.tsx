@@ -15,7 +15,7 @@ import {
 } from '@/components/styles/Footer.styled';
 import { Section } from '@/components/styles/Sections.styled';
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   const year = new Date().getFullYear();
 
   return (

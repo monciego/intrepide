@@ -14,7 +14,7 @@ import {
 import MembershipCard from '@/components/Membership/MembershipCard';
 import { membershipCarDatas } from '@/membershipCardData';
 
-const Membership = () => {
+const Membership = (): JSX.Element => {
   const [annualy, setAnually] = useState(false);
 
   const annualyFunction = () => {

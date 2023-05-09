@@ -7,7 +7,7 @@ import {
 import { StyledButton } from '@/components/styles/Button.styled';
 import { BsArrowUpRightCircleFill as ArrowIcon } from 'react-icons/bs';
 
-const Banner = () => {
+const Banner = (): JSX.Element => {
   return (
     <BannerContainer>
       <BannerTitle>WORKOUT PROGRAM MADE FOR YOU!</BannerTitle>

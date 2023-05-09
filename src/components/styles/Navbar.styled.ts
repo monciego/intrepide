@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { BiMenu } from "react-icons/bi";
-import { Link } from "react-scroll";
+import styled from 'styled-components';
+import { BiMenu } from 'react-icons/bi';
+import { Link } from 'react-scroll';
 
 export const StyledNavbar = styled.nav`
   font-family: ${({ theme }) => theme.fonts.merriweather};

@@ -1,9 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const StyledButton = styled.button`
+type StyledButtonProps = {
+  primary?: boolean;
+};
+
+export const StyledButton = styled.button<StyledButtonProps>`
   padding: 0.5rem 1.5rem;
   font-family: ${({ theme }) => theme.fonts.merriweather};
-  background: ${(props) => (props.primary ? "#FF0034" : "#0736DB")};
+  background: ${(props) => (props.primary ? '#FF0034' : '#0736DB')};
   color: #fff;
   border: none;
   outline: none;
@@ -15,7 +19,7 @@ export const StyledButton = styled.button`
   font-size: 0.8rem;
 
   &:hover {
-    background: ${(props) => (props.primary ? "#CD0031" : "#022398")};
+    background: ${(props) => (props.primary ? '#CD0031' : '#022398')};
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {

@@ -1,6 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const StyledCard = styled.div`
+type StyledCardProps = {
+  imgStart?: boolean;
+  line?: boolean;
+};
+
+export const StyledCard = styled.div<StyledCardProps>`
   margin: 2rem 0;
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -8,11 +13,11 @@ export const StyledCard = styled.div`
     justify-content: center;
     align-items: center;
     gap: 5%;
-    flex-direction: ${(props) => (props.imgStart ? "row" : "row-reverse")};
+    flex-direction: ${(props) => (props.imgStart ? 'row' : 'row-reverse')};
   }
 `;
 
-export const CardImage = styled.figure`
+export const CardImage = styled.figure<StyledCardProps>`
   width: 100%;
   height: 16rem;
   position: relative;
@@ -23,14 +28,14 @@ export const CardImage = styled.figure`
     height: 18rem;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 4.25rem;
       height: 0.0625rem;
       background: #fff;
       width: 5rem;
-      left: ${(props) => (props.imgStart ? "90%" : "-3rem")};
-      display: ${(props) => (props.line ? "block" : "none")};
+      left: ${(props) => (props.imgStart ? '90%' : '-3rem')};
+      display: ${(props) => (props.line ? 'block' : 'none')};
     }
   }
 `;
@@ -55,7 +60,7 @@ export const SubTitle = styled.h4`
   z-index: 5;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -0.35rem;
     left: 0;
@@ -104,7 +109,7 @@ export const SectionLink = styled.a`
   cursor: pointer;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -0.25rem;
     left: 0;

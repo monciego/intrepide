@@ -8,8 +8,15 @@ import {
   SectionCardTitle,
   StyledCard,
 } from '@/components/styles/Card.styled';
+import { TProgramData } from '@/programData';
 
-const ProgramCard = ({ img, title, details, imgStart, line }) => {
+const ProgramCard = ({
+  img,
+  title,
+  details,
+  imgStart,
+  line,
+}: TProgramData): JSX.Element => {
   return (
     <StyledCard imgStart={imgStart}>
       <CardImage imgStart={imgStart} line={line}>
