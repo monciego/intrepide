@@ -13,7 +13,12 @@ import {
 } from '@/components/styles/MobileNav.styled';
 import Image from '@/assets/program1-img.png';
 
-const MobileNav = ({ isOpen, toggleHandler }) => {
+type MobileNavProps = {
+  isOpen: boolean;
+  toggleHandler: () => void;
+};
+
+const MobileNav = ({ isOpen, toggleHandler }: MobileNavProps): JSX.Element => {
   return (
     <MobileStyledNav isOpen={isOpen}>
       <MobileHeader>
@@ -27,7 +32,6 @@ const MobileNav = ({ isOpen, toggleHandler }) => {
             smooth={true}
             duration={650}
             delay={0}
-            spyThrottle={0}
             onClick={toggleHandler}
           >
             Home
@@ -39,7 +43,6 @@ const MobileNav = ({ isOpen, toggleHandler }) => {
             smooth={true}
             duration={650}
             delay={0}
-            spyThrottle={0}
             onClick={toggleHandler}
           >
             Programs
@@ -51,7 +54,6 @@ const MobileNav = ({ isOpen, toggleHandler }) => {
             smooth={true}
             duration={650}
             delay={0}
-            spyThrottle={0}
             onClick={toggleHandler}
           >
             About Us
@@ -63,7 +65,6 @@ const MobileNav = ({ isOpen, toggleHandler }) => {
             smooth={true}
             duration={650}
             delay={0}
-            spyThrottle={0}
             onClick={toggleHandler}
           >
             Memberships
@@ -75,7 +76,6 @@ const MobileNav = ({ isOpen, toggleHandler }) => {
             smooth={true}
             duration={650}
             delay={0}
-            spyThrottle={0}
             onClick={toggleHandler}
           >
             Testimonials

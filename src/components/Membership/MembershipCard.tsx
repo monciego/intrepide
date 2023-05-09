@@ -12,17 +12,33 @@ import {
   PopularPricing,
 } from '@/components/styles/MembershipCard.styled';
 
+type TMembershipCardDatas = {
+  id: number;
+  tier: string;
+  price: number;
+  anuallyPrice: number;
+  membershipIncludes: TMembershipIncludes[];
+  isPremier?: boolean;
+  annualyFunction: boolean;
+};
+
+type TMembershipIncludes = {
+  id: number;
+  membershipIncludes: string;
+  included: boolean;
+};
+
 const MembershipCard = ({
   tier,
   price,
   membershipIncludes,
-  primier,
+  isPremier,
   anuallyPrice,
   annualyFunction,
-}) => {
+}: TMembershipCardDatas): JSX.Element => {
   return (
     <MembershipStyledCard>
-      {primier && <PopularPricing>popular pricing</PopularPricing>}
+      {isPremier && <PopularPricing>popular pricing</PopularPricing>}
       <MembershipTier>{tier}</MembershipTier>
       <MembershipPrice>
         ${annualyFunction ? anuallyPrice : price}
@@ -46,7 +62,9 @@ const MembershipCard = ({
         })}
       </MembershipListContainer>
 
-      <MembershipCardCTA primier={primier}>start training</MembershipCardCTA>
+      <MembershipCardCTA isPremier={isPremier}>
+        start training
+      </MembershipCardCTA>
     </MembershipStyledCard>
   );
 };

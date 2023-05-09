@@ -6,7 +6,7 @@ import { programData } from '@/programData';
 import ProgramCard from '@/components/Programs/ProgramCard';
 import { Section, SectionCards } from '@/components/styles/Sections.styled';
 
-const Program = () => {
+const Program = (): JSX.Element => {
   return (
     <Section id='programs'>
       <SectionTitle>our training programs</SectionTitle>

@@ -17,7 +17,7 @@ import { Section } from '@/components/styles/Sections.styled';
 import { benefitsData } from '@//benefitsData';
 import BenefitImg from '@/assets/benefits-img.png';
 
-const Benefits = () => {
+const Benefits = (): JSX.Element => {
   return (
     <Section>
       <SectionBenefits>

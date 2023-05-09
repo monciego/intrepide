@@ -1,9 +1,13 @@
-import styled from "styled-components";
-import { BiX as CloseIcon } from "react-icons/bi";
-import { Link } from "react-scroll";
+import styled from 'styled-components';
+import { BiX as CloseIcon } from 'react-icons/bi';
+import { Link } from 'react-scroll';
 
-export const MobileStyledNav = styled.nav`
-  display: ${({ isOpen }) => (isOpen ? "block" : "none")};
+type MobileStyledNavProps = {
+  isOpen: boolean;
+};
+
+export const MobileStyledNav = styled.nav<MobileStyledNavProps>`
+  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
   background: ${({ theme }) => theme.colors.primaryBG};
   position: fixed;
   inset: 0;
@@ -72,7 +76,7 @@ export const MobileMenuImage = styled.figure`
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     background: rgba(0, 0, 0, 0.25);
     inset: 0;

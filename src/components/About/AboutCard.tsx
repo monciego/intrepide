@@ -1,4 +1,4 @@
-import React from 'react';
+import { TAboutData } from '@/aboutData';
 import {
   CardDetails,
   CardImage,
@@ -11,7 +11,13 @@ import {
 } from '@/components/styles/Card.styled';
 import { HiOutlineArrowNarrowRight as Arrow } from 'react-icons/hi';
 
-export const AboutCard = ({ img, title, subTitle, details, imgStart }) => {
+export const AboutCard = ({
+  img,
+  title,
+  subTitle,
+  details,
+  imgStart,
+}: TAboutData): JSX.Element => {
   return (
     <StyledCard imgStart={imgStart}>
       <CardImage imgStart={imgStart}>

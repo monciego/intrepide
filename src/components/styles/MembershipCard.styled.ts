@@ -1,5 +1,9 @@
-import styled from "styled-components";
-import { HiCheckCircle as IconCheck } from "react-icons/hi";
+import styled from 'styled-components';
+import { HiCheckCircle as IconCheck } from 'react-icons/hi';
+
+type MembershipCardCTAProps = {
+  isPremier?: boolean;
+};
 
 export const MembershipStyledCard = styled.div`
   border: 0.125rem solid ${({ theme }) => theme.colors.primary};
@@ -81,8 +85,8 @@ export const MembershipList = styled.li`
   }
 `;
 
-export const MembershipCardCTA = styled.button`
-  background: ${(props) => (props.primier ? "#FF0034" : "transparent")};
+export const MembershipCardCTA = styled.button<MembershipCardCTAProps>`
+  background: ${(props) => (props.isPremier ? '#FF0034' : 'transparent')};
   color: white;
   padding: 0.75rem 0;
   border: 0.015rem solid ${({ theme }) => theme.colors.primary};
